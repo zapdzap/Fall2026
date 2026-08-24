@@ -1,0 +1,30 @@
+Course is about:
+    How to:
+    - Extract requirements
+    - use them to develop an architecture
+    - document it
+    - analyze and match requirements to architecture
+
+Required Textbook: Software Architecture in Practice, 4th edition by len bass, paul clements, and rick kazman,
+Orielly login via rit.
+
+2 Projects
+-Project 1 Proposal, Arcjotectire Analysis, Presentation
+-Project 2, Arch proposal Presentation, Prototype & Demo
+
+Attendance:
+    - Required
+    - Checked
+    - 1 unexcused absense
+    - excuse absense only for serious reasons
+    - make up activity / exam: only for serious reasons
+
+Grading:
+    - Quiz 5%
+    - Assignments activities 10%
+    - project 1 10%
+    - project 2 30%
+    bro keeps going too fast
+
+
+
