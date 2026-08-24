@@ -1,0 +1,42 @@
+
+DEVELOPMENT LIFECYCLE & PRINCIPLES
+
+#VOCABULARY
+Ubiquitous - everywhere, across the board
+dos - denial of service, hitting a resource a bunch to crash a server
+ddos - denial of service from multiple computers, hundreds to thousands of different ip addresses
+
+
+Core Security Properties
+-------------------------
+CATEGORIES
+    #Confiedentiality
+    #Integrity
+    #Availability
+--------------------------
+
+            ▼
+
+--------------------------
+
+Confidentiality
+- The system must not disclose any information intended to be hidden. Ex: Credit card, credentials, api keys
+- Note: Open source software can still be confidential.
+
+--------------------------
+
+Integrity
+- The system must not allow assets to be subverted ny unauthorized users. Ex: Changing a prisoner's release date
+- We must be able to trust what is in the system:
+    # The data being stored
+    # The functionality being executed
+
+--------------------------
+
+Availability
+- The system must be able to be available and operational to users. Ex: bringing down amazon
+- These are extremely hard to protect against
+    # Any system performance degradation that can be triggered by a user can be used for dos/ddos
+    # Concurrency issues, infinite loop, or resource exhaustion.
+
+---------------------------

@@ -1,0 +1,75 @@
+Course Overview
+This course provides a foundation for building secure software by applying security principles to the software development lifecycle. Topics covered include: security in requirements engineering, secure designs, risk analysis, threat modeling, deploying cryptographic algorithms, defensive coding, penetration testing, fuzzing, static analysis, and security assessment. Students will learn the practical skills for developing and testing for secure software while also learning sound security fundamentals from real-world case studies.
+
+At the completion of this course, students will be able to:
+
+Apply contemporary techniques to model and analyze the security of a software system
+Identify project security risks & selecting risk management strategies.
+Use statistical methods to collect and analyze metrics for assessing and improving the security of a product, process, and project objectives.
+Describe and discuss security concerns designs at multiple levels of abstraction
+Comply with data privacy and security requirements when designing a software system.
+Design a software solution for secure access and protection of data.
+Use quality assurance activities and strategies that support early vulnerability detection and contribute to improving the development process.
+Textbooks
+There are no books to purchase for this class. However, we consider the following free online sources to be our main sources of reading:
+
+The Common Weakness Enumeration (CWE)
+The MITRE ATT&CK Framework
+The Common Attack Patterns Enumeration and Classification
+Course Format
+Lectures. You know what these are.
+Vulnerability of the Day. We will cover a common programming mistake that results in the system being vulnerable. These are live demonstrations with links to descriptions in outside other resources.
+Class Activities. We will cover a different practice or tool. Most of these require teams (i.e. people at your table), some are more individual. Some activities may have a graded deliverable, but all will require in-class attendance.
+Quizzes. To help you study through the reading and lecture material, we will provide several reading quizzes to be completed online through myCourses.
+Input Handling Project. This will be a programming project to help you with input handling, character sets, and regular expressions.
+Case Study Project. You will be doing an in-depth case study of a large, open source software project.
+Web Application Fuzzer project. We will be building a web application fuzz testing tool for automating the discovery of common vulnerabilities in web applications.
+Readings. These are designed to supplement the lectures and in-class activities. Exams will be based on both readings and lectures, and the instructor reserves the right to ask exam questions that were only covered in the assigned readings.
+Grading Breakdown
+5%: Quizzes & Activities (Exam 1 practice, Permissions)
+20%: Fuzzer project
+15%: Case Study project
+5%: IPC Project
+5%: Input handling project
+15%: Exam 1
+15%: Exam 2
+20%: Final exam (cumulative)
+Grading Letter Breakdown
+Grade	Percentage Range
+A	93+
+A-	90 <= x < 93
+B+	87 <= x < 90
+B	83 <= x < 87
+B-	80 <= x < 83
+C+	77 <= x < 80
+C	73 <= x < 77
+C-	70 <= x < 73
+D	60 <= x < 70
+F	under 60
+Rounding is at the discretion of the instructor.
+
+Late Work
+Policy for late work will be handled by the instructor on a case-by-case basis. Do not assume that any accomodations will be made for late work.
+
+We Care About Your Wellness
+Success in this course depends heavily on your personal health and wellbeing. We recognize that stress is an expected part of the college experience, and it often can be compounded by unexpected setbacks or life changes outside the classroom. Moreover, those with marginalized identities may be faced with additional social stressors.
+
+Your other instructors and I strongly encourage you to reframe challenges as an unavoidable pathway to success. Reflect on your role in taking care of yourself throughout the term, before the demands of exams and projects reach their peak.
+
+Please feel free to reach out to your instructor about any difficulty you may be having that may impact your performance in this course as soon as it occurs and before it becomes unmanageable. In addition to your academic advisor, we strongly encourage you to contact the many other support services on campus that stand ready to assist you.
+
+On Generative AI
+All student work is required to be their own. While we encourage research and reuse, all submissions must be your own, original creation. Copying/ Plagiarism is NOT tolerated. This is standard policy. This applies to ALL work, be it code related or written/ essay style submission.
+
+In situations where use of online resources is prohibited, this includes prohibition of GPT/ AI. In situations where it is not prohibited (unless otherwise stated), you may use online search for reference, but the output you create must be your own. This includes situations where you may use GPT or other AI tools for searching and/ or reference, with the following provisos:
+
+If you use GPT (ChatGPT or other, similar tools) you must also do the following:
+
+Submit your prompts for GPT (as a separate file) as part of your work
+Provide a confirming statement that GPT was used as reference only, and your work is original.
+If ANY of your work is found to be copied (from online sources OR ChatGPT/ AI), you would be subject to serious penalties which could be one or more of the following:
+Zero on the assignment
+Zero on a full project
+“F” on the course
+Reported as plagiarism to the University and subsequent disciplinary action at the Institution level
+In short - just don’t do it. It’s not worth the consequences to cheat (and it’s not ethical)!
