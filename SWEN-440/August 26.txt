@@ -1,0 +1,62 @@
+
+## AUGUST 26
+
+What skills does the software architect need?
+Computers & OS, Newtorks, Software
+- Memory allocation, thread management, etc.
+- Network configuration/protocols/secutiy, etc.
+- Languages, frameworks, libraries, applicability.
+
+- People, Processes, Business, Law
+- Business understanding
+- Requirements negotiations
+
+- Communications, Requirements, Analysis.
+- Clear documentation & technical design
+
+# JVM - Java Virtual Machine - Converts Java code into native computer code, allows you to run java code anywhere.
+
+###
+Business Goals vs Software Goals
+###
+
+Architecture is a bridge bewtween end goal & requirements (specify how to achieve)
+- Event-driven backend for real-time processing, scalability and reliability
+- websockets for real-time updates
+- custom geospatial indexing system for algorithms
+- cdn for static resources
+- etc
+
+# Event-Driven Backend - a software system design where services communicate by producing, detecting, and reacting to 
+state changes—called events—rather than making direct, synchronous API calls to one another
+
+
+###
+Some of the topics
+###
+
+Architecture is multi-disciplinary
+-Computer basics
+-OS basics
+-Networking basics
+- Data and ML basics
+- APIs and services
+
+TCP vs UDP
+
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two core transport layer protocols used to send data across a 
+network. TCP is a reliable, connection-oriented protocol that guarantees data delivery in the correct order, while UDP is a fast, 
+connectionless protocol that sends data quickly without delivery guarantees.
+
+ TCP - (Transmission Control Protocol)Connection-Oriented: Uses a "three-way handshake" to set up a connection between devices before
+ sending any data. Reliable & Ordered: Checks for lost packets, requests retransmission of missing data, and sorts packets into the 
+ correct sequence upon arrival. Flow & Congestion Control: Adjusts transmission speeds to match network capacity and prevent data loss.
+ Higher Overhead: Uses larger headers (20 to 60 bytes) for tracking and error-checking.
+ Best Use Cases: Web browsing (HTTP/HTTPS), email (SMTP), file transfers (FTP/SFTP).
+ 
+ UDP - (User Datagram Protocol)Connectionless: Sends data immediately without a handshake or checking if the receiver is ready 
+ ("fire-and-forget").Unreliable & Unordered: Does not track delivery, retransmit lost packets, or guarantee order.
+ Lightweight & Fast: Minimal overhead with a tiny 8-byte header, making it much faster than TCP.
+ Best Use Cases: Live video streaming, online multiplayer gaming, voice/video calls (VoIP), and DNS lookups.
+
+ 
