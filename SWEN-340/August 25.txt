@@ -1,0 +1,16 @@
+SWEN-340 is about microcontrollers and embedded systems
+An embedded system is a specialized computer built into a larger device or machine to perform a single dedicated job.
+It runs firmware hardcoded into it. 
+
+"RW" -> Read/Write
+
+
+& -> Bitwise and
+| -> Bitwise or
+^ -> Bitwise XOR
+>> -> Right Shift
+<< -> Left Shift
+~ -> Complement -> The logical invert, same as NOT
+
+In C, an array name is a constant pointer that references the 0th element of the array's storage.
+Communication to microcontroller via C pointers adding things to address in microcontroller memory.

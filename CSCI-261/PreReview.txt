@@ -1,0 +1,41 @@
+# Discrete and other math review
+
+Copy Paste Symbols: ∈ ∉ ⊆ ⊂ ∪ ∩ ∅ ∀ ∃ ¬ ∧ ∨
+
+###############################################
+                    Sets
+###############################################
+
+- A set is an UNORDERED collection of objects.
+Example: A = {1,2,3,7} = {7,3,1,2} = {7,3,1,2,2,7} B = {car,house,star,snail,coin} 
+
+- S = {x|x=2y+1 for some y in Z} - The set contains all odd numbers
+
+- A is a subset of B if for every element in A, we also have all the elements in B. We then write A ⊆ B.
+
+Symbol meanings:
+∈ : Is an element of (membership)
+∉ : Not an element of
+⊆ : Is a subset of
+⊂ : Is a proper subset of
+∪ : Set union
+∩ : Set Intersection
+∅ : Empty Set
+∀ : For all
+∃ : There exists
+¬ : Negation (Not)
+∧ : And
+∨ : Or
+△ : Symmetric difference
+
+- SYMMETRIC DIFFERENCE: Everything except intersection
+
+- DISJOINT: Sets A and B are disjoint if the intersection of the two sets are nothing. ( A ∩ B = ∅ )
+
+- PARTITION: A partitation of set A is -> collection of subsets inside of A -> that add up to A. 
+    For example if you had a set of every real number and it contained subsets of each number from 0.00-0.99
+    Example: {{1.0,1.1,1.2,...}{2.0,2.1,2.2,...}...onwards}
+
+-POWER SET: -> Power set "B" is a set of every possible subset inside of set "B". The null set is part of this set.
+
+- CARTESIAN PRODUCT or cross product of sets A and B -> is the set of all ordered pairs of eleents of A and B.
