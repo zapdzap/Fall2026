@@ -1,0 +1,9 @@
+
+
+uint8_t *p_ord = (uint8_t *) P1_BASE_ADDR;
+
+u -> unsigned (not negative normal number)
+int8 -> integer 8 bits (1 byte)
+*p_ord -> pointer to variable
+(uint8_t *) -> cast to unsigned integer 8 bits pointer 
+P1_BASE_ADDR -> base address of port 1 (P1) in memory
