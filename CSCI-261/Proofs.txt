@@ -1,0 +1,45 @@
+Copy Paste Symbols: ∈ ∉ ⊆ ⊂ ∪ ∩ ∅ ∀ ∃ ¬ ∧ ∨
+
+Direct Proof (P → Q): Assume P is true. Show that Q must also be true.
+
+Proof by Contradiction (¬Q → ¬P): Assume Q is false. Show that this leads to a contradiction,
+implying that P must also be false.
+
+Proof by Contrapositive (P → Q): Assume ¬Q is true. Show that ¬P must also be true.
+
+Proof by Induction: Prove a base case, then assume the statement holds for an arbitrary case n, 
+and show that it must also hold for n+1.
+
+#####
+#####
+EXAMPLE OF 
+DIRECT PROOF
+######
+
+P->Q P :n ∈ Natural Numbers Q:n<=n^2
+n is a natural numbers, n is <= n^2
+
+Natural number means >= 0, so n is a natural number.
+
+There is no number n where, n^2 produced a number less than n, so n is always less than or equal to n^2.
+Proof this by direct proof.
+
+n>=1
+n^2>=1*n
+n^2>n THIS IS TRUE AND END OF PROOF
+
+#####
+EXAMPLE 2 DIRECT PROOF
+######
+
+Prove every odd number is the difference of two squares.
+Let the odd number be 2k+1, where k is an integer.
+
+(2k+1) = (k+1)^2 - k^2
+(2k+1) = (k^2 + 2k + 1)
+(2k+1) = (k^2 + 2k + 1)
+This shows that every odd number can be expressed as the difference of two squares, completing the proof
+
+######
+
+######
