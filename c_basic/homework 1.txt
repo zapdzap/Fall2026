@@ -43,7 +43,7 @@ Questions:
     7.	How many bits are in each of the following data types?
 		
 		a. Byte			Answer: 8
-		b. Word 		Answer: 16 
+		b. Word 		   Answer: 16 
 		c. Doubleword	Answer: 32
 		d. Quadword		Answer: 64
 		e. Nibble		Answer: 4 
