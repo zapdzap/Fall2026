@@ -1,0 +1,32 @@
+Structs are C's answer to classes like Java
+If you want the speed of C but the organization of Java, structs are a good compromise. Structs are a way to group together different data types into one unit. For example, if you wanted to represent a point in 2D space, you could use a struct to group together two integers (x and y coordinates) into one unit.
+
+C++ is a good alternative to Java if you still want the speed of C.
+
+typedef struct{
+    long_string_t label; // name for the point
+    double x; // xcoordinate
+    double y; // ycoordinate
+}   point_t; // pick a name that suggests it is a stuct
+point_t origin;
+point_t focus;
+
+Pointers in C
+
+int i;
+int *ip;
+
+On most systems, both allocate 32 bits for i and ip.
+The difference i's contents are treated as an integer.
+    All we can manipulate is the integer value in.
+    ip's contents are treated as an address (where an integer can be found)
+        We can manipulate the address (make it point elsewhere)
+        WE can manipulate the integer at the current address.
+
+#####
+SSH
+#####
+
+SSH (Secure Shell) is a protocol that allows secure remote login and other secure network services over an insecure network. 
+It provides strong authentication and encrypted data communications between two computers connecting over a potentially insecure
+ network such as the internet.
