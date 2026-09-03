@@ -1,0 +1,43 @@
+Inductive Definition -- like recursion
+
+- Inductive reasoning can aslso be applied to many definitions, especiially in computer sicence.
+- Commonly this is used to generate or construct sets or objects from some initials building blocks.
+- Once some initial elements are included the set, then the remaining items can be constructed from the previous ones by some set of iterative rules
+    - These rules are self-referential, and naturally leads to self-similar structure
+
+- we call this an inductivedefinitions (sometimes referred to as a recursive definition)
+- This is not unlike functional recursion from the bottom up
+- for example the merge operation in merge sort is defined inductively as follows:
+    - The merge of two empty lists is the empty list
+    - The merge of a non-empty list and an empty list is the non-empty list
+    - The merge of two non-empty lists is the list whose first element is the smaller of the first elements of the two lists, followed by the merge of the rest of the two lists.
+
+-Note that inductive definitions are constructive and frequently, but not always, construct infinite sets.
+
+POWER SET IS A SET THAT CONTAINS ALL POSSIBLE SUBSETS OF A SET INCLUDING THE NULL SET.
+
+
+_----___
+
+Let Alphabet (sigma symbol) be given containing n(N) symbols.
+Let B be a set of strings containing each s in Sigma, along with E, the string of length 0.
+Then if b is a string in B, then the string formed by concatenating any symbol in Sigma to b is also in B.
+
+
+-----
+
+PROOF BY INDUCTION
+
+Let f(n) be the some of i=1 to n, and let g(n) = n(n+1)/2. We will prove that f(n) = g(n) for all n in N.
+
+You need to multilate either of the equations to look like the other, and then use induction to prove that they are equal for all n in N.
+
+make g(n+1) look like f(n+1) and then use induction to prove that they are equal for all n in N.
+
+f(f+1) = sum of i=1 to n+1 = sum of i=1 to n + sum of (n+1) to n(n+1) = sum of i=1 to n + (n+1) =
+
+now the sum of i=1 to n is just f(n) + n + 1.
+
+now we replace f(n) with g(n) and we have g(n) + n + 1 = n(n+1)/2 + n + 1 = (n^2+n)/2 + (2n+2)/2 = (n^2+3n+2)/2 = (n+1)(n+2)/2 = g(n+1)
+
+Proven lets gooooo
