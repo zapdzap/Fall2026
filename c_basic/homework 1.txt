@@ -65,15 +65,15 @@ Questions:
         uint8_t *p1_odr = (uint8_t *) P1_BASE_ADDR;
 
 	8. Suppose current value of the register is 0xC1. You are asked to set ONLY the ODR2 bit in P1_ODR to 1. What will be new register value?
-		Hexadecimal Answer: 
-			Reasoning: 
+		Hexadecimal Answer: 0xC5
+			Reasoning: The current register value is 0xC1, in binary that's 11000001. Setting p1 to 1 means we need to set the 2nd bit to 1. This would just be adding 4 to our hexadecimal value. 0xC1 + 0x04 = 0xC5. The new register value is 0xC5.
 			
 
 	9. Suppose current value of the register is 0xC1. You are asked to set ODR2 & ODR5 bits in P1_ODR to 1 AND clear 0DR0 bit (i.e. set to zero). What will be new register value?
-		Hexadecimal Answer: 
-			Reasoning: 
+		Hexadecimal Answer: 0xC4
+			Reasoning: The current register value is 0xC1, in binary that's 11000001. Setting p1 to 1 means we need to set the 2nd and 5th bits to 1. This would just be adding 4 + 32 = 36 to our hexadecimal value. Then we just subtract 1 from our hexadecimal value to clear the 0DR0 bit. 0xC1 + 0x04 + 0x20 - 0x01 = 0xC4.
 			
 =
 	10. Write C code that sets ONLY the ODR2 bit in P1_ODR to 1
-		Answer: 
+		Answer: *p1_odr |= (1 << 2);
 				
