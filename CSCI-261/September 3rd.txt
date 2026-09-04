@@ -41,3 +41,9 @@ now the sum of i=1 to n is just f(n) + n + 1.
 now we replace f(n) with g(n) and we have g(n) + n + 1 = n(n+1)/2 + n + 1 = (n^2+n)/2 + (2n+2)/2 = (n^2+3n+2)/2 = (n+1)(n+2)/2 = g(n+1)
 
 Proven lets gooooo
+
+-----
+
+PROOF BY INDUCTION #2
+
+Clain: For sets S1 to SN, we have the unions of the sets is equal to the complement 
