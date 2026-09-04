@@ -1,0 +1,34 @@
+Penetration testing is about attempting to exploit a smuch as possible ethically. 
+The goal is to find vulnerabilities in a system before malicious hackers do.
+(Pen testing)
+
+-Requires a working system
+    -Not necessarily finished, but working
+    -As networked as psosible for pivoting
+    -Highly skilled testers
+
+- Outsider
+    -Not pre-knowing company secrets
+    -Most compnies hire out pentester, but in-house pentesters are highly marketable.
+    -
+
+####
+MITRE's ATT*CK & CAPEC
+
+AaTT&CK
+    - A taxnomy of tactics and techniques for general-purpose pentesting knowledge
+    - Tactics: broad categories
+
+ATT&CK ON EXAM!!!!
+
+######
+ATT&CK TACTICS
+######
+
+# PRE ATTACK: The adversary is building capabilities and doing initial research.
+# INITIAL ACCESS: The adversary is trying to get into your network.
+# DISCOVERY: The adversary is trying to figure out your environment.
+# PRIVILEGE ESCALATION: the adversary is trying to gain higher-level permission
+# DEFENSE EVASION: the adversary is trying to avoid being detected
+# CREDENTIAL ACCESS: the adversary is trying to steal account names and passwords
+# COLLECTION: the adversary is trying to gather data of interest to their goal.
