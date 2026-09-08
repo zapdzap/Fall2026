@@ -1,0 +1,33 @@
+Cortex-M4 Devices
+###
+
+The cortex-M4 is a 32-bit microcontroller architecture that is widely used in embedded systems.
+ It is known for its high performance, low power consumption, and rich set of features, making it 
+ suitable for a variety of applications including IoT devices, automotive systems, and consumer 
+ electronics.
+
+####
+Cortex-M4 Peripherals
+####
+
+##SYSTEM TIMER##
+
+"SysTick" is a 24-bit timer that is part of the Cortex-M4 core. It is designed to provide a simple 
+and efficient way to generate periodic interrupts  for timekeeping and scheduling tasks in embedded 
+applications. The SysTick timer can be configured to generate interrupts at regular intervals, 
+allowing developers to implement time-based functionality such as delays, timeouts, and periodic
+task execution.
+
+- 24 bit timer,
+limits the possible range of the timer to 2^24 - 1, which is 16,777,215.
+
+1/80000000nth of a second -> Time to take one cycle
+
+80mhz -> 80 million cycles per second
+
+--
+
+Be able to with some difficulty, use/absorb the information in a technical document like the Cortex-M4 Devices packet.
+
+# Key things done in swen 340 is making interrupts.
+# Like throwing an exception, and exception handlers, but for hardware, not software.
