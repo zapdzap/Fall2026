@@ -1,0 +1,31 @@
+####
+Tractability and Asymptotic Analysis
+####
+
+
+####
+Computational Tractability
+####
+- A problem is tractable (polynomial) if it can be solved effiiently with a reasonable, finite amount of resources (time, space, etc.)
+- Efficient and resounable are poorly defined and open to interpreatition.
+- Different problems can have different resource requirments.
+-  We would like a way to meesaure the difficulty of problems which:
+    - Can fairly compare the resources required to run two different algorithms.
+        -Whether it be to sole the same, or different problems
+    - Is independent of the machine computing the system
+
+
+In order order to be consitent we will always ocompute the runtime of any given algorithm as a fuction of the input size.
+Will count the number of high-level instructions for a given input size n.
+
+##########
+
+--
+
+o "<"
+O "<="
+θ "= O = Ω"
+Ω ">="
+ω ">"
+
+All comparison sorts at O(n log n) or better.
