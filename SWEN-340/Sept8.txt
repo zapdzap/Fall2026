@@ -31,3 +31,44 @@ Be able to with some difficulty, use/absorb the information in a technical docum
 
 # Key things done in swen 340 is making interrupts.
 # Like throwing an exception, and exception handlers, but for hardware, not software.
+
+
+Best Practice -> use bitwise operator with & with tilda to clear bits to set them to be zero. Use | to set 1 or more bits to be 1. Use ^ to toggle bits.
+
+
+###
+BITS AND WHAT THEY DO INSIDE OF THE REGISTERS
+###
+
+
+
+SYST_CSR: SysTick Control and Status Register ->
+    - This register controls the operation of the SysTick timer and provides status information. 
+    It includes bits for enabling/disabling the timer, selecting the clock source, enabling/disabling 
+    interrupts, and indicating whether the timer has counted to zero.
+
+
+
+SYST_RVR: SysTick Reload Value Register ->
+    - Holds the value that the SysTick timer counts down from. When the timer reaches zero, it reloads 
+    this value and continues counting down. This register is typically set to a value that corresponds 
+    to the desired time interval for the periodic interrupt.
+
+
+
+SYST_CVR: SysTick Current Value Register ->
+    - Holds the current value of the SysTick timer. This register is decremented on each clock cycle, 
+    and when it reaches zero, it triggers an interrupt if enabled. The value in this register can be 
+    read to determine how much time has elapsed since the last reload.
+
+
+
+SYST_CALIB: SysTick Calibration Value Register -> 
+    - Contains the calibration value for the SysTick timer, which is used to adjust the timer's 
+    frequency to match the desired time base. This register is typically set by the system 
+    firmware or bootloader during initialization.
+
+
+LOAD REGISTER (SYST-LOAD)
+CONTROLLER REGISTER (SYST-CTRL)
+
