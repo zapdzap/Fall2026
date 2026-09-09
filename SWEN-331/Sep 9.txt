@@ -1,0 +1,16 @@
+Misuse vs. Abuse
+
+Misue is unintentional
+Abuse is intentional.
+
+
+E.g. Maintain Drug interactions
+
+-Actor: Hospital Administrator
+-Precondition: Admin is authenticated.
+-Main flow:
+    1. Admin selects different drug codes from the national drug codes selection menu
+    2. Admin enters a minimum dosage for both drugs
+    3. Admin enters text notes about the potnential consequences of the interaction.
+    4. Admin is shown a table of the patient records where the interaction rule would apply.
+    5. Admin saves the interaction rule.
