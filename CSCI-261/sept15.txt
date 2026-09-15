@@ -1,0 +1,12 @@
+Inductive Proof
+
+- given iterator
+
+prove that the action peforms the same as n as n+1 for all n ≥ 0
+
+- base case: n = 0
+- inductive step: assume true for n, prove for n+1
+  - start with the assumption that the action works for n
+  - show that performing the action for n+1 is equivalent to performing it for n and then one more step
+  - conclude that by induction, the action works for all n ≥ 0
+  
