@@ -55,3 +55,14 @@ Executing as users
 
 setuid, setgid
 - setuid and setgid bits on files
+    - chmod ug+s ./prog.sh
+    - " execute as the owner's rights, not as the executes users rights"
+- Files owned by root with setuid are highly risks
+    - Arbitrary code exeduction vulnerability? Executing as root.
+    - App developers should almost never use This
+    - OS commands have a lot of these
+        - E.g. passwd is owned root with setuid
+
+Repudiation becomes a major threat with setuid and setgid
+
+Different from the "Sticky Bit"
