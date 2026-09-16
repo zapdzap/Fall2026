@@ -1,0 +1,57 @@
+Linux Permissions
+
+Each file and directory has bits for..
+-Read,Write,Execute: rwx
+-Files: works as it sounds
+
+Directories:
+-r -> "can list files in a directory" (but not read a given file)
+-x -> "read a file if you know the name" (easy if dir. also has read)
+-w -> "can create, change delete"
+
+Thus you many only read a file if and only if you:
+-Have read permissions to the file
+-Have execute permissions to the file directory.
+
+chmod
+- command to change permissions
+    - Set(=), Add(+), Remove(-)
+    - Set user to rw, not x:            chmod u=rw .
+    - Set user, groups to only r/w:     chmod ug=rw .
+    - Set ug to only r/x, recursively:  chmod -R ug=rx ;
+    - Add "groups canr/w":              chmod g+rw .
+    - Add "others can r/w":             chmod o+rw .
+    - Add "everyone can read":          chmod a+r .
+    - Remive "Write from group": chmod g-w .
+    
+- Octal notation
+e.g. chmod 755 file.txt 
+Good for setting, not adding/removing 
+1,2,3 are never used
+
+
+umask
+- When a file is createed..
+    - User mask (umask) is consulted for permissions
+    - owner = user who created the file
+    - Subtract octally ("digit by digit")
+        - from 666 for files
+        - from 777 for Directories
+        e.g. 666-022=644, or rw-r--r--
+        nitron.se.rit.edu default:              rw------- (or 077)
+        common default:                         rw-r--r-- (or 022)
+        Common umask shared group stuff:        rw-rw---- (or 007)
+
+Programs can change their own umask.
+
+Executing as users
+- When executing, ordinarily..
+    - os ignores the owner of the program file
+    - runs the program as you ( asumming you have permissions)
+    - e.g. prog.sh owned by root gets run as you
+- This allows for root to have files that cannot be modified, but executed
+    - e.g passwd (change the password) should not be tampered with
+
+
+setuid, setgid
+- setuid and setgid bits on files
