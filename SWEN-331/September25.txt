@@ -1,0 +1,29 @@
+Key Principles
+
+- Principle of Least privilege
+- Dfense in Depth
+- Obviously no vulnerabilities
+- Assume they get past the other defenses,
+how do we:
+    - protect the inner parts of the system?
+    - limit the capabilities of the attacker?
+    - believe our critical subsystems are secure?
+- Note in this lecture "process" == "executing program"
+
+
+Permissions Challenges
+    - when programs are executed the coe has permissions (via executing user, setuid, setgid, etc.)
+    - Many programs need elevated (root) permissions to functions
+        -Web servers & listen and respond on http, port 80
+        - Email Servers listen & respond on SMTP, e.g port 25,
+        - Mobile apps: listening for text mesaages vs. displaying previews.
+        - What Permissions are truly needed, and when?
+
+    - Some programs have entirely seperate functions that should not impact each other
+        - Browsers: one web page should not impact the others.
+    - Solutions: design your architecture around your permission needs.
+
+
+Distrustful Decomposition
+    - Decompose the system into seperate processes with seperate permissions
+        
