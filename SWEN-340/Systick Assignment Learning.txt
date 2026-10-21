@@ -1,0 +1,47 @@
+What is SysTick and How Does it Work?
+Think of SysTick like an egg timer:
+
+You set how long it should count (put a number into the LOAD register).
+
+You turn it on (set bits in the CTRL register).
+
+The timer counts down on its own in the background.
+
+When it reaches zero, it flips a flag (called COUNTFLAG) to say "Time's up!"
+
+static void init_systick()
+{
+	// 1. Disable SysTick by clearing the CTRL register
+	SysTick->CTRL = 0;
+
+	// 2. Set the LOAD register to 8,000,000 (8 million = 100 milliseconds)
+	SysTick->LOAD = 8000000 - 1;
+
+	// 3. Set the clock source bit in CTRL to the internal clock (CLKSOURCE)
+	SysTick->CTRL |= SysTick_CTRL_CLKSOURCE_Msk;
+
+	// 4. Set the enable bit in CTRL to start the timer (ENABLE)
+	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;
+}
+
+
+What's happening here?
+SysTick->CTRL = 0; turns off the timer completely so we can safely change its settings.
+
+SysTick->LOAD = 8000000 - 1; sets our egg timer duration. At a clock speed of 80 MHz, 8 million ticks takes 0.1 seconds (100 milliseconds). We subtract 1 because counting down includes 0.
+
+SysTick_CTRL_CLKSOURCE_Msk and SysTick_CTRL_ENABLE_Msk are bit masks provided by ST's library so you don't have to remember hex numbers like 0x00000004.
+
+
+static void delay_systick()
+{
+	// Outer loop: repeat 20 times (20 x 100ms = 2.0 seconds)
+	for (int i = 0; i < 20; i++)
+	{
+		// Inner loop: keep checking until COUNTFLAG becomes 1
+		while ((SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk) == 0)
+		{
+			// Do nothing - just wait for SysTick to hit 0
+		}
+	}
+}

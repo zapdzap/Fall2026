@@ -1,0 +1,34 @@
+Defensive Coding vs. risk analysis
+
+RISK analysis 
+    - all about doman assests, threats, what ifs
+    - global-minded
+    -prioritization is critical
+
+DEFENSIVE CODING
+- One small change in code > big change in risk analysis
+- e.g. storing passwords in the customer table vs. users table
+- e.g. website allowing uploading files for one feature
+    - "Weakest Link" Mentality
+    - Less about prioritization
+    - Technology-Specifidc
+
+- Writing insecure code is suprisingly essay
+    - Arcane coding assumptions
+    - Many different technologies to know
+
+- Maintainability still counts
+    - Duplicate code is even harder to secure.
+    - Vulnerabilities often have regressions and incomplete fixes
+
+- Know thy applies
+    - Misuisng an API in the wrong context can be a vulnerability
+    e.g. an XML parser that also executes includes
+
+
+COMPLEXITY
+
+    Structural COMPLEXITY -> lots of inter-connected subsystems -> architectural COMPLEXITY
+    Cognitive Complexity -> lack of understanding -> mistakes/vulnerabilities
+    Complexity in inputs-> big secutiy risks, apps to operating systems.
+    Obviously no vulnerabilities, vs. no obvious vulnerabilities.
