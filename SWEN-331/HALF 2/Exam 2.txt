@@ -1,0 +1,57 @@
+==========================================================================================
+Release Management
+    - Semantic Versioning
+    - MajorVersion.MinorVersion.Patch - know the rules!!!!
+        - drop following numbers to zero if larger number increases
+    - Depedency Management
+    - Lock Files
+==========================================================================================
+Authentication
+    -OAuth2->authorization->resource
+    Oauth is used for accessing a specific resource, resource manager does authorization
+    Auth server generates token after user is authenticated and authorizated
+    -MFA-> I know, I have, I am
+    -Usability 
+        -Recall vs -Recognition, recoginition better
+        Recognition Techniques
+            Drawmetric: pick images you recognize
+            Cognometric
+            Locimetric:
+==========================================================================================
+Input Handling
+    -Regular Expessions
+    - match/test whats the difference
+    -groups
+    -Js syntax
+
+==========================================================================================
+VotDs
+
+    -Insecure ALgorithms: Below
+    -Unprotected Seed: Below
+    -Hardcoded (secret) Credentials:
+            - USE ENVIRONMENT VARIABLED NOT HARDCODED!
+    -Regex Dos
+    -Java Reflection Abuse
+    - ToC/ToU (Time of Check/Time of Use)
+        - Make transactions Atomic - read and fetch both in one operation instead of seperate operations - Lock up database while reading and release after changes
+        
+
+==========================================================================================
+Cryptography
+    - Hashing -> not "really" Cryptography because its irreversible
+    - Symmetric Key - one Key
+            -benfits: faster and sometimes more robust
+    - Assymetric Key (Public Key) - two keys, public and private
+            - Whoever you want gets public key, only you get private
+            - benefits: private messages,
+            - cons: significantly slower
+    - SSL/TLS
+    - Key exchanges
+    -PRNGs (Pseudo Random Number Generators)
+            -Insecure Algorithms
+            -Unprotected Key
+            -Good seed gen: combining a bunch of abritrary information to create seed
+    - Salted Hash:
+        - take data and add "salt" (additional data like a string), then has that.
+==========================================================================================
