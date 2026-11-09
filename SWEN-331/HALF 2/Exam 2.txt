@@ -55,3 +55,142 @@ Cryptography
     - Salted Hash:
         - take data and add "salt" (additional data like a string), then has that.
 ==========================================================================================
+Misc
+    -CVSS
+    -SIde chanks Attacks
+    -attacks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Rainbow Tables: Tables that exist to decrypt common used hash Algorithms
+        - given passwords and their hashed versions you can create a table to find the equivalance.
+    common passwords + common digests = common hashes
+    Thus, attackers have large databases of pre-computed hashes called rainbow tables
+    Solution: hashing with salt
+
+
+    Hash digest algorithms:
+        Compute a very large number on a chunk of data,
+        the more number it can map to the better,
+        same number? highly probably its the same data
+
+
+    Hash collisions: 
+        By definition, hash digests cannot uniquely map data to a hash
+        Thus, many pieces of data map to the same hash
+        A collision is two known pieces of data that map to the same hash number
+        Can be used to “spoof” a password
+
+        MD4, MD5 & SHA1 now considered “broken”
+        Colliding digests can be manufactured
+        http://www.phreedom.org/research/rogue-ca/
+        Still cannot be reversed
+
+        Broken hash function” could mean:
+        `A collision is found, 
+            e.g. meh(30)=meh(37)
+        Can find any arbitrary collision,
+        e.g. find any x such that meh(x)=3`
+
+
+
+
+        Symmetric-Key Cryptography
+        Encrypt key == Decrypt key
+        So keep that key a secret!!
+        Traditional arrangement
+        Standard algorithm: AES
+        Fastest, and mathematically strongest form of crypto
+        Traditional usage
+        Encryption of data storage: backups, hard drives, etc.
+        Networking situations: once you exchange the key!
+
+
+        Public-Key Cryptography
+        Encrypt key is public, 
+        Decrypt key is private
+        Anyone in the world can encrypt data and send it do you
+        But they can’t decrypt any other messages sent to you
+
+        Most popular modern algorithm: RSA
+        Factorization of two prime numbers
+        Public/private keys generated from computing two very large prime numbers
+
+        RSA has never been cracked, although…
+        The algorithms for generating very large primes have been cracked/poorly implemented many times
+        Result of poor PRNG practices (bad algorithms & bad seeds)
+
+        Traditional usage: networking (SSH, SSL, PGP)
+
+
+
+
+        Drawbacks of Public Key
+        Implementation issues
+        Tends to be slower than traditional symmetric key
+        Generating primes with 50+ digits is hard
+
+        How do we trust the public key?
+        What if Eve confuses EAdam with ESatan?
+        Man-in-the-middle attack
+        Satan intercepts it 
+        Decrypts it 
+        Reads it 
+        Re-encrypts it properly
+        Sends it off to Adam
+
+
+
+        Symmetric Key:
+        Key does encrypting and decrpyting
+        Benefit: fastest mathematically the strongest
+        drawback: distributing the keys
+
+        Public key:
+            Benefit Easier to distribute the keys
+            Trusting public keys is tricky.
+
+        SSL and TLS are the public-key encryption standards today.
+        SSL: Secure Sockets Layer
+
+
+
+
+
+
+
+Symmetric Key:
+Key encrpyts and Decrypts
+Fastest, mathmetically strongest
+Drawbacks is distributing the keys is difficult
+
+
+Public Key:
+Easier to distribute keys,
+Trusting public keys is difficult
+
+SSL: 
+
+SSL and TLS are public key encyption sta
