@@ -1,0 +1,14 @@
+TCP VS UDP
+
+TCP: lossless
+    -handshake validates the source adress
+    -all of nothing: if one packet is dropped, request fails
+    -relaible, at the cost of performance
+    -example usages: websites, text chat, email
+
+UDP: Lossy
+
+    - Fast, at the cost of reliability
+    - source pelts destination with packets
+    - destination does its best to process as fast as possible
+    - example usages: DNS, video streaming, voice chat.
